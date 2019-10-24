@@ -1,0 +1,11 @@
+---
+applications:
+- name: spring-data-pcf
+  memory: 768M
+  instances: 1
+  random-route: true
+  path: target\spring-data-pcf-0.0.1-SNAPSHOT.jar
+  services:
+   - SparkDB_Dev
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git
